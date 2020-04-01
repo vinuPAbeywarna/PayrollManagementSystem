@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{32307E4E-435F-4CE5-9AB2-83DB5804B4AC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PayrollMSsample</RootNamespace>
+    <AssemblyName>PayrollMSsample</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPage.Designer.cs">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdmiPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdmiPage.Designer.cs">
+      <DependentUpon>AdmiPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR.Designer.cs">
+      <DependentUpon>HR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageAdminSalarydetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageAdminSalarydetail.Designer.cs">
+      <DependentUpon>ManageAdminSalarydetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="manageEmployeedatails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="manageEmployeedatails.Designer.cs">
+      <DependentUpon>manageEmployeedatails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageHRDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageHRDetails.Designer.cs">
+      <DependentUpon>ManageHRDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageHRsalarydetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageHRsalarydetail.Designer.cs">
+      <DependentUpon>ManageHRsalarydetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagrEmployeeSalaycs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagrEmployeeSalaycs.Designer.cs">
+      <DependentUpon>ManagrEmployeeSalaycs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalaryDetails .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SalaryDetails .Designer.cs">
+      <DependentUpon>SalaryDetails .cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemAdminPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemAdminPage.Designer.cs">
+      <DependentUpon>SystemAdminPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAdminsalarydetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAdminsalarydetails.Designer.cs">
+      <DependentUpon>ViewAdminsalarydetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewEmployeeDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewEmployeeDetail.Designer.cs">
+      <DependentUpon>viewEmployeeDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEmployeesalarydetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewEmployeesalarydetails.Designer.cs">
+      <DependentUpon>ViewEmployeesalarydetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewHRDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewHRDetails.Designer.cs">
+      <DependentUpon>ViewHRDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewHRSalarydetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewHRSalarydetails.Designer.cs">
+      <DependentUpon>ViewHRSalarydetails.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminPage.resx">
+      <DependentUpon>AdminPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdmiPage.resx">
+      <DependentUpon>AdmiPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR.resx">
+      <DependentUpon>HR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageAdminSalarydetail.resx">
+      <DependentUpon>ManageAdminSalarydetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="manageEmployeedatails.resx">
+      <DependentUpon>manageEmployeedatails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageHRDetails.resx">
+      <DependentUpon>ManageHRDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageHRsalarydetail.resx">
+      <DependentUpon>ManageHRsalarydetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagrEmployeeSalaycs.resx">
+      <DependentUpon>ManagrEmployeeSalaycs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SalaryDetails .resx">
+      <DependentUpon>SalaryDetails .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemAdminPage.resx">
+      <DependentUpon>SystemAdminPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAdminsalarydetails.resx">
+      <DependentUpon>ViewAdminsalarydetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewEmployeeDetail.resx">
+      <DependentUpon>viewEmployeeDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewEmployeesalarydetails.resx">
+      <DependentUpon>ViewEmployeesalarydetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewHRDetails.resx">
+      <DependentUpon>ViewHRDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewHRSalarydetails.resx">
+      <DependentUpon>ViewHRSalarydetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
